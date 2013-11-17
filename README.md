@@ -43,11 +43,15 @@ From the <b>/home/pi/</b> directory, git the code from https://github.com/mvarta
 <code>sudo git clone https://github.com/mvartani76/RPi-TwitterBot-Tutorial-Python</code>
 </pre>
 
-This will create the directory RPi-TwitterBot-Tutorial-Python.<br>
+This will create the directory <b>RPi-TwitterBot-Tutorial-Python</b>.<br>
 
-There are four python source files in this directory.
+There are four python source files in this directory that utilize the twython python library.
 <ol>
-<li>
+<li><b>SillyCamPicTweeter.py</b>	- This code tweets a picture from a USB webcam </li>
+<li><b>SillyGPIOTweeter.py</b>	- This code tweets the status changes of GPIO pins 7,9,11,13, and 15 only when they change as twitter forbids duplicate tweets</li>
+<li><b>SillyTempTweeter.py</b>	- This code tweets the Raspberry Pi CPU temperature one time</li>
+<li><b>SillyTweeter.py</b> - This code allows the user to tweet random text from the command line</li>
+</ol>
 
 Begin by making a new directory to house your Tweet project, then create a new file.
 mkdir SillyTweeter
