@@ -53,26 +53,30 @@ There are four python source files in this directory that utilize the twython py
 <li><b>SillyTweeter.py</b> - This code allows the user to tweet random text from the command line</li>
 </ol>
 
-Begin by making a new directory to house your Tweet project, then create a new file.
-mkdir SillyTweeter
-cd SillyTweeter
-sudo nano SillyTweeter.py
-You can call it whatever you like, obviously.
-In the text editor that appears, copy and paste the following, replacing the consumer key with the relevant key from the Twitter application page we left open earlier. Each key is surrounded by single quotes, so be sure not to miss those. Note that ACCESS_KEY is referred to as Access token on the Twitter app page.
+Each of the files will have the following lines of code but you will need to replace the relevant keys with your information that you received from Twitter when registering your app.
 <pre class="code-text-only" style="display: none;">
 <code>#!/usr/bin/env python
 import sys
 from twython import Twython
-CONSUMER_KEY = '***************YOUR DATA*****************'
-CONSUMER_SECRET = '***************YOUR DATA*****************'
-ACCESS_KEY = '***************YOUR DATA*****************'
-ACCESS_SECRET = '***************YOUR DATA*****************'
+CONSUMER_KEY = <b>'***************YOUR DATA*****************'</b>
+CONSUMER_SECRET = <b>'***************YOUR DATA*****************'</b>
+ACCESS_KEY = <b>'***************YOUR DATA*****************'</b>
+ACCESS_SECRET = <b>'***************YOUR DATA*****************'</b>
 
 api = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET) 
 
 api.update_status(status=sys.argv[1])
 </code></pre>
-Hit Ctrl-X, and press Y to exit and save the file. Make it executable with the following command (replacing your Python file name if you chose something else)
-sudo chmod +x SillyTweeter.py
+If you want, you can ake it executable with the following command (replacing your Python file name for the relevant file)
+
+<pre class="code-text-only" style="display: none;">
+<code>sudo chmod +x SillyTweeter.py</code>
+</pre>
 You should now be able to test your ability to post tweets like so:
-python SillyTweeter.py 'Hello Everyone, this is my Raspberry Pi tweetin
+
+<pre class="code-text-only" style="display: none;">
+<code>python SillyTweeter.py 'Hello Everyone, this is my Raspberry Pi tweetin'
+python SillyGPIOTweeter.py
+python Silly TempTweeter.py
+python SillyCamPicTweeter.py</code>
+</pre>
