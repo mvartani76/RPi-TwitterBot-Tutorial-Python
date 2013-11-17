@@ -37,6 +37,18 @@ Once saved, head back to the Details tab and click the button at the bottom to c
 Create Your Python Project(s)
 =============================
 
+From the <b>/home/pi/</b> directory, git the code from https://github.com/mvartani76/RPi-TwitterBot-Tutorial-Python.
+
+<pre class="code-text-only" style="display: none;">
+<code>sudo git clone https://github.com/mvartani76/RPi-TwitterBot-Tutorial-Python</code>
+</pre>
+
+This will create the directory RPi-TwitterBot-Tutorial-Python.<br>
+
+There are four python source files in this directory.
+<ol>
+<li>
+
 Begin by making a new directory to house your Tweet project, then create a new file.
 mkdir SillyTweeter
 cd SillyTweeter
