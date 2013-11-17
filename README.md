@@ -16,8 +16,8 @@ Install Twython
 Registering a Twitter app
 =========================
 In order to use the Twitter API – that is, the REST interface that we’ll use to post new Tweets and generally
- interact with Twitter outisde of the twitter website – we’ll need to register a new app. We register a new app 
- from https://dev.twitter.com/apps/new – you do not need to specify a callback URL, and just make up a website if you want.
+interact with Twitter outisde of the twitter website – we’ll need to register a new app. We register a new app 
+from https://dev.twitter.com/apps/new – you do not need to specify a callback URL, and just make up a website if you want.
  
  
 <img src="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/08/new-twitter-app.jpg">
@@ -31,8 +31,11 @@ By default, the app is set to read-only, so we won’t be able to publish tweets
 <img src="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/08/readwrite-access.jpg">
 
 Once saved, head back to the Details tab and click the button at the bottom to create an OAuth access token – this gives your application access to your own Twitter account. Refresh, and leave the page open for later – we’ll need to copy paste some of those keys in a minute.
-access-token
-Create Your Python Project
+
+<img src="http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/08/access-token.jpg">
+
+Create Your Python Project(s)
+=============================
 
 Begin by making a new directory to house your Tweet project, then create a new file.
 mkdir SillyTweeter
